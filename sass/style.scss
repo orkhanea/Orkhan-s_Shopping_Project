@@ -1,0 +1,20 @@
+@import "partial/home";
+@import "partial/helper";
+@import "partial/shop";
+@import "partial/product";
+@import "partial/singleBlog";
+@import "partial/about.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

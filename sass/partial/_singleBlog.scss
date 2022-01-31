@@ -1,0 +1,190 @@
+main{
+    .blog-wrapper{
+        .single-blog-item{
+            background-color: #f6f7fb;
+            border-radius: 15px;
+            padding: 55px 40px;
+            .single-blog-content{
+                .author-date{
+                    margin-bottom: 10px;
+                    ul{
+                        li{
+                            display: inline-block;
+                            text-transform: uppercase;
+                            color: #abd373;
+                            font-size: 18px;
+                            &:not(:last-child) {
+                                padding-right: 10px;
+                                
+                            }
+                        }
+                        .author{
+                            a{
+                                color: #abd373;
+                                transition: all 0.3s ease 0s;
+                            }
+                        }
+                    }
+                }
+                .single-blog-title{
+                    margin-bottom: 20px;
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #525252;
+                }
+
+            }
+            .single-blog-p{
+                line-height: 30px;
+                margin-bottom: 50px;
+            }
+            .single-blog-img{
+                position: relative;
+
+                &:hover::before {
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    -webkit-transition: all 900ms ease-in;
+                    -o-transition: all 900ms ease-in;
+                    transition: all 900ms ease-in;
+                }
+                &:hover::after {
+                    top: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    -webkit-transition: all 900ms ease-in;
+                    -o-transition: all 900ms ease-in;
+                    transition: all 900ms ease-in;
+                }
+
+                &::before {
+                    background: rgba(255,255,255,0.2);
+                    bottom: 0;
+                    content: '';
+                    left: 50%;
+                    position: absolute;
+                    right: 51%;
+                    top: 0;
+                    opacity: 1;
+                    pointer-events: none;
+                }
+                &::after {
+                    background: rgba(255,255,255,0.2);
+                    bottom: 50%;
+                    content: '';
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    opacity: 1;
+                    pointer-events: none;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+            .single-blog-banner{
+                padding-bottom: 50px;
+            }
+
+            blockquote{
+                background-color: #abd373;
+                border-radius: 15px;
+                position: relative;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+                margin-top: -10px;
+                margin-bottom: 50px;
+                p{
+                    color: #ffffff;
+                    font-style: italic;
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .blog-social-tags{
+            background-color: #f6f7fb;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding: 10px 40px;
+            .tags{
+                display: flex;
+                .tags-title{
+                    color: #5f5f5f;
+                    font-weight: 500;
+                }
+                ul{
+                    display: flex;
+                    margin-left: 5px;
+                    li{
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
+                        a{
+                            color: #abd373;
+                            transition: all 0.3s ease 0s;
+                        }
+                    }
+                }
+            }
+            .social-link{
+                display: flex;
+                ul{
+                    li{
+                        display: inline-block;
+                        &:not(:last-child){
+                            padding-right: 15px;
+                        }
+                        a{
+                            font-size: 14px;
+                            display: block;
+                            transition: all 0.3s ease 0s;
+                            color: #000000;
+                            &:hover {
+                                color: #abd373;
+                            }
+                        }
+                    }
+                    .comment{
+                        a{
+                            span{
+                                color: #000000;
+                                font-weight: 600;
+                                transition: all 0.3s ease 0s;
+                            }
+                            &:hover {
+                                span{
+                                    color: #abd373;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 479px){
+    .blog-wrapper .single-blog-item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .blog-wrapper .blog-social-tags{
+        flex-direction: column !important;
+    }
+    .blog-wrapper .single-blog-item blockquote p{
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+}
