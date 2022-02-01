@@ -240,6 +240,22 @@ $(document).ready(function()
 
         // #endregion Single Product Slider End \\
 
+        // #region Modal-slider \\
+            new Swiper(".modal-slider",{
+                autoplay: false,
+                delay: 5e3,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                observer: true,
+                observeParents: true,
+                loop: false,
+                navigation: {
+                    nextEl: ".thumbs-button-next",
+                    prevEl: ".thumbs-button-prev"
+                }
+            });
+        // #endregion Modal-slider end \\
+
     // #endregion Sliders End\\
 
     // #region To Top \\
