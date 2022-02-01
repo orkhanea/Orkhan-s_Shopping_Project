@@ -1,0 +1,56 @@
+main{
+    .faq-full{
+        .frequently-area{
+            .heading{
+                padding-bottom: 60px;
+                font-size: 24px;
+                line-height: 24px;
+                color: #525252;
+            }
+            .frequently-item{
+                .has-sub{
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                    border: 1px solid #dee2e6;
+                    padding: 20px;
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        line-height: 20px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: #555252;
+                        transition: all 0.3s ease 0s;
+                        &:hover{
+                            color: #abd373;
+                        }
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                    .frequently-body{
+                        height: 0;
+                        overflow: hidden;
+                        padding: 0;
+                        transition: all 0.9s ease;
+                        li{
+                            line-height: 1.8;
+                            color: #525252;
+                        }
+                    }
+                    .active{
+                        height: auto;
+                        padding-top: 20px;
+                    }
+                }
+                .open{
+                    a{
+                        color: #abd373;
+                    }
+                }
+            }
+        }
+    }
+}

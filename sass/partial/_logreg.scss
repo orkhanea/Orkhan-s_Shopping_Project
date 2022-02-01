@@ -1,0 +1,70 @@
+main{
+    .login-register-full{
+        .form-wraper{
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .10);
+            background-color: white;
+            padding: 30px;
+            height: 100%;
+            border-radius: 5px;
+            .form-title{
+                font-size: 20px;
+                line-height: 23px;
+                text-transform: capitalize;
+                font-weight: 700;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+                color: #525252;
+            }
+            label{
+                display: block;
+                font-size: 14px;
+                margin-bottom: 12px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #525252;
+            }
+            input{
+                width: 100%;
+                background-color: transparent;
+                border: 1px solid #dee2e6;
+                border-radius: 0;
+                line-height: 23px;
+                padding: 10px 20px;
+                font-size: 14px;
+                margin-bottom: 15px;
+                &:focus-visible{
+                    outline: none;
+                }
+            }
+            .forgotton-password-info{
+                a{
+                    font-size: 14px;
+                    color: #525252;
+                    transition: all 0.3s ease 0s;
+
+                    &:hover{
+                        color: #abd373;
+                    }
+                }
+            }
+            button{
+                width: 165px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                background-color: #abd373;
+                border-color: #abd373;
+                color: white;
+                padding: 0;
+                text-transform: uppercase;
+                overflow: hidden;
+                border-radius: 23.5px;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    background-color: #525252;
+                    color: white;
+                }
+            }
+        }
+    }
+}

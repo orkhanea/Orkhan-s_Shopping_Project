@@ -77,20 +77,20 @@ main .about-video-odo-full .about-video .video-effect .video-bg .popup-btn .yout
 
 main .about-video-odo-full .about-video .video-effect .video-bg .popup-btn .youtube-link span:first-child {
   background: #abd373;
-  -webkit-animation: wave-button 2s infinite 0.1s linear backwards;
-          animation: wave-button 2s infinite 0.1s linear backwards;
+  -webkit-animation: play-button 2s infinite 0.1s linear backwards;
+          animation: play-button 2s infinite 0.1s linear backwards;
 }
 
 main .about-video-odo-full .about-video .video-effect .video-bg .popup-btn .youtube-link span:nth-child(2) {
   background: #abd373;
-  -webkit-animation: wave-button 3s infinite 0.5s linear backwards;
-          animation: wave-button 3s infinite 0.5s linear backwards;
+  -webkit-animation: play-button 3s infinite 0.5s linear backwards;
+          animation: play-button 3s infinite 0.5s linear backwards;
 }
 
 main .about-video-odo-full .about-video .video-effect .video-bg .popup-btn .youtube-link span:nth-child(3) {
   background: #abd373;
-  -webkit-animation: wave-button 4s infinite 1s linear backwards;
-          animation: wave-button 4s infinite 1s linear backwards;
+  -webkit-animation: play-button 4s infinite 1s linear backwards;
+          animation: play-button 4s infinite 1s linear backwards;
 }
 
 main .about-video-odo-full .about-video .video-effect .video-bg .popup-btn .youtube-link .play-icon {
@@ -273,7 +273,7 @@ main .team-full .team-item:hover .team-content .team-member-name {
   opacity: 0;
 }
 
-@-webkit-keyframes wave-button {
+@-webkit-keyframes play-button {
   0% {
     opacity: 1;
     -webkit-transform: scale(0.3);
@@ -291,7 +291,7 @@ main .team-full .team-item:hover .team-content .team-member-name {
   }
 }
 
-@keyframes wave-button {
+@keyframes play-button {
   0% {
     opacity: 1;
     -webkit-transform: scale(0.3);
@@ -306,12 +306,68 @@ main .team-full .team-item:hover .team-content .team-member-name {
     opacity: 0;
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media (max-width: 575px) {
+  .about-video-odo-full .about-counter {
+    text-align: center;
+    padding-top: 35px !important;
+    padding-bottom: 50px !important;
+  }
+  .about-video-odo-full .about-counter h2 {
+    font-size: 28px !important;
+    line-height: 1.6 !important;
+  }
+  .about-counter .counter-item {
+    padding-left: 0 !important;
+  }
+  .counter-item .counter-wrapper {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
 @media (min-width: 768px) {
   .about-counter .col-lg-3:not(:last-child) {
     border-right: 1px solid #dcdcdc;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-video-odo-full .about-counter {
+    padding-top: 35px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .team-full .team-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-video-odo-full .about-counter {
+    padding-top: 45px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-video-odo-full .about-counter {
+    padding-top: 65px !important;
+    padding-bottom: 80px !important;
   }
 }
 /*# sourceMappingURL=about.css.map */

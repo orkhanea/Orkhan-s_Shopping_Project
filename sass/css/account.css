@@ -1,0 +1,185 @@
+main .account-full ul {
+  display: block;
+}
+
+main .account-full ul li {
+  display: block;
+}
+
+main .account-full ul li a {
+  border: 1px solid #444444;
+  display: block;
+  background: #2c2c2c;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+main .account-full ul li a:hover {
+  color: #abd373;
+}
+
+main .account-full ul li .active {
+  background: #abd373;
+  border-color: #abd373;
+  color: white;
+}
+
+main .account-full ul li .active:hover {
+  color: white;
+}
+
+main .account-full .tab-content {
+  border: 1px solid #dee2e6;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+main .account-full .tab-content .tab-pane {
+  display: block;
+  height: 0;
+  max-width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-dashboard p {
+  margin-bottom: 20px;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-dashboard p a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #525252;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-dashboard p a:hover {
+  color: #abd373;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-dashboard p:last-child {
+  margin-bottom: 0;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-orders table {
+  margin-bottom: 0;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-orders table tbody tr th, main .account-full .tab-content .tab-pane .myaccount-orders table tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-orders table tbody tr .account-order-id {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #525252;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-orders table tbody tr .account-order-id:hover {
+  color: #abd373;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form {
+  padding: 30px;
+  border-radius: 0;
+  border: 1px solid #dee2e6;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -20px;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input label {
+  margin-bottom: 8px;
+  display: block;
+  color: #525252;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input input {
+  padding: 0 15px;
+  border: 1px solid #dee2e6;
+  height: 40px;
+  width: 100%;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input input:focus-visible {
+  outline: none;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input button {
+  width: 165px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #abd373;
+  border-color: #abd373;
+  color: #ffffff;
+  padding: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 23.5px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input button:hover {
+  background-color: #525252;
+  border-color: #525252;
+  color: #ffffff;
+}
+
+main .account-full .tab-content .tab-pane .myaccount-details .myaccount-form .myaccount-form-inner .single-input-half {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 15px);
+          flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+}
+
+main .account-full .tab-content .tab-pane .small-title {
+  margin-bottom: 15px;
+  color: #525252;
+}
+
+main .account-full .tab-content .active {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .make-it-unvisible {
+    display: none !important;
+  }
+  .small-title {
+    margin-bottom: 5px !important;
+    font-size: 18px !important;
+  }
+  #account-address address {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=account.css.map */

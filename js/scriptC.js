@@ -352,22 +352,46 @@ $(document).ready(function()
     
     // #region Product Count Select \\
         
-        let inputQty = $(".cart-action-box");
-        let plusBtn = $(".cart-action .plus");
-        let minusBtn = $(".cart-action .minus");
+        // let inputQty = $(".cart-action-box");
+        // let plusBtn = $(".cart-action .plus");
+        // let minusBtn = $(".cart-action .minus");
+        // let qty = 1;
+        // plusBtn.on("click", function(){
+        //     if (qty>=1&&qty<5) {
+        //         inputQty.val(qty+1);
+        //         qty+=1; 
+        //     }
+        // })
+        // minusBtn.on("click", function(){
+        //     if (qty>1&&qty<=5) {
+        //         inputQty.val(qty-1);
+        //         qty-=1; 
+        //     }
+        // })
+
+        let inputQty = document.querySelectorAll(".cart-action-box");
+        let plusBtn = document.querySelectorAll(".cart-action .plus");
+        let minusBtn = document.querySelectorAll(".cart-action .minus");
         let qty = 1;
-        plusBtn.on("click", function(){
+        for (let i = 0; i < plusBtn.length; i++) {
+            
+            plusBtn[i].addEventListener("click", function(){
             if (qty>=1&&qty<5) {
-                inputQty.val(qty+1);
+                inputQty[i].value = qty+1;
                 qty+=1; 
             }
-        })
-        minusBtn.on("click", function(){
-            if (qty>1&&qty<=5) {
-                inputQty.val(qty-1);
-                qty-=1; 
-            }
-        })
+            });
+            minusBtn[i].addEventListener("click", function(){
+                if (qty>1&&qty<=5) {
+                    inputQty[i].value=qty-1;
+                    qty-=1; 
+                }
+            });
+            
+        };
+
+        
+
 
     // #endregion Product Count Select End \\
 
@@ -398,6 +422,22 @@ $(document).ready(function()
         }
    
     // #endregion Counter-Up Plugin End \\
-    
+
+    // #region FAQ \\
+        var faqOpenBtn = document.querySelectorAll(".faq-open-btn");
+        var faqBody = document.querySelectorAll(".frequently-body");
+        for (let i = 0; i < faqOpenBtn.length; i++) {
+            faqOpenBtn[i].addEventListener("click", function(){
+                for (let j = 0; j < faqBody.length; j++) {
+                    if (j!=i) {
+                        faqBody[j].classList.remove("active");
+                    }
+                    
+                }
+                faqBody[i].classList.toggle("active");
+                
+            });
+        }
+    // #endregion FAQ End \\
 
 });

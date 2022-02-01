@@ -3,7 +3,14 @@
 @import "partial/shop";
 @import "partial/product";
 @import "partial/singleBlog";
-@import "partial/about.scss";
+@import "partial/about";
+@import "partial/checkout";
+@import "partial/wishlist";
+@import "partial/account";
+@import "partial/logreg";
+@import "partial/faq";
+@import "partial/contact";
+@import "partial/error404";
 
 * {
     box-sizing: border-box;

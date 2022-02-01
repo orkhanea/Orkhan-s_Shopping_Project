@@ -1,0 +1,167 @@
+main{
+    .checkout-full{
+        form{
+            .billing-form{
+                h3{
+                    border-bottom: 1px solid #dee2e6;
+                    font-size: 25px;
+                    margin: 0 0 25px;
+                    padding-bottom: 10px;
+                    text-transform: uppercase;
+                    width: 100%;
+                    color: #525252;
+                }
+                .choose-counrty{
+                    margin-bottom: 25px;
+                    label{
+                        margin: 0 0 5px;
+                        display: block;
+                        color: #525252;
+                        span{
+                            display: inline-block;
+                            font-size: 24px;
+                            line-height: 16px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .nice-select{
+                        span{
+                            height: 40px;
+                            line-height: 40px;
+                            display: inline-block;
+                            width: 100%;
+                            padding: 0 0 0 15px;
+                            color: #525252;
+                        }
+                    }
+
+                }
+                .checkout-form-list{
+                    margin-bottom: 30px;
+                    label{
+                        margin-bottom: 5px;
+                        color: #525252;
+                        span{
+                            color: #525252;
+                        }
+                    }
+                    input{
+                        border: 1px solid #dee2e6;
+                        background: #ffffff;
+                        border-radius: 0;
+                        height: 42px;
+                        width: 100%;
+                        padding: 0 0 0 10px;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+                }
+                .checkout-form-list-2{
+                    margin-bottom: 0;
+                    textarea{
+                        background-color: transparent;
+                        border: 1px solid #dee2e6;
+                        height: 90px;
+                        padding: 15px;
+                        width: 100%;
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+        .your-order{
+            background: #f1f1f1;
+            padding: 30px 40px 30px;
+            h3{
+                border-bottom: 1px solid #dee2e6;
+                font-size: 25px;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                width: 100%;
+                color: #525252;
+            }
+            .your-order-table{
+                .table{
+                    background: rgba(0,0,0,0);
+                    border: medium none;
+                    width: 100%;
+                    thead{
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+            .payment-method{
+                margin-top: 20px;
+                .payment-accordion{
+                    .card{
+                        border: 0;
+                        border-radius: 0;
+                        background: #f1f1f1;
+                        .card-header{
+                            padding: 0;
+                            margin-bottom: 0;
+                            background-color: #f1f1f1;
+                            border-bottom: 0;
+                            .panel-title{
+                                font-size: 18px;
+                                cursor: pointer;
+                                color: #525252;
+                                a{
+                                    transition: all 0.3s ease 0s;
+                                    color: #525252;
+                                    &:hover {
+                                        color: #abd373;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .collapse{
+                            .card-body{
+                                padding: 0 !important;
+                            }
+                        }
+
+                        .collapsing{
+                            .card-body{
+                                padding: 0 !important;
+                            }
+                        }
+                    }
+                    .payment-btn{
+                        input{
+                            background-color: #505050;
+                            border: medium none;
+                            color: white;
+                            font-size: 17px;
+                            height: 50px;
+                            margin: 20px 0 0;
+                            padding: 0;
+                            text-transform: uppercase;
+                            transition: all 0.3s ease 0s;
+                            width: 100%;
+                            border: 1px solid transparent;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #abd373;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px){
+    .billing-form .checkout-form-list-2 {
+        margin-bottom: 30px !important;
+    }
+}

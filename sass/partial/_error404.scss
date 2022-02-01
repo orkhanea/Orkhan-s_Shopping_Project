@@ -1,0 +1,47 @@
+main{
+    .error-404-full{
+        background-position: bottom;
+        height: 885px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .error-404-content{
+            text-align: center;
+            .error-404-img{
+                margin-bottom: 70px;
+                img{
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+            .title{
+                font-style: italic;
+                color: #4e4e4e;
+                font-size: 48px;
+                margin-bottom: 65px;
+            }
+            .button-wrap{
+                a{
+                    transition: all 0.3s ease 0s;
+                    background-color: #abd373;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    padding: 0;
+                    width: 208px;
+                    height: 63px;
+                    line-height: 63px;
+                    &:hover{
+                        background-color: #525252;
+                        color: #ffffff;
+                    }
+                    i{
+                        margin-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

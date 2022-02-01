@@ -186,44 +186,6 @@
                         padding-right: 10px;
                     }
                 }
-                .quantity{
-                    .cart-action{
-                        position: relative;
-                        width: 100%;
-                        text-align: left;
-                        .cart-action-box{
-                            background-color: #505050;
-                            border: 1px solid #505050;
-                            color: white;
-                            text-align: center;
-                            width: 75px;
-                            height: 50px;
-                            border-radius: 5px;
-                            &:focus-visible{
-                                outline: none;
-                            }
-                        }
-                        .quantity-btn{
-                            cursor: pointer;
-                            position: absolute;
-                            transition: all 0.3s ease 0s;
-                            font-size: 10px;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            color: white;
-                            i{
-                                font-weight: 900;
-                            }
-                        }
-                        .minus{
-                            left: 15px;
-                        }
-                        .plus{
-                            left: auto;
-                            right: 15px;
-                        }
-                    }
-                }
                 .add-to-cart{
                     a{
                         padding: 0;
@@ -333,6 +295,42 @@
                     }
                 }
             }
+        }
+    }
+    .cart-action{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        .cart-action-box{
+            background-color: #505050;
+            border: 1px solid #505050;
+            color: white;
+            text-align: center;
+            width: 75px;
+            height: 50px;
+            border-radius: 5px;
+            &:focus-visible{
+                outline: none;
+            }
+        }
+        .quantity-btn{
+            cursor: pointer;
+            position: absolute;
+            transition: all 0.3s ease 0s;
+            font-size: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            i{
+                font-weight: 900;
+            }
+        }
+        .minus{
+            left: 15px;
+        }
+        .plus{
+            left: auto;
+            right: 15px;
         }
     }
     .product-description-full{
